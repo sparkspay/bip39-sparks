@@ -1033,6 +1033,21 @@
     }
 
     var networks = [
+
+        {
+            name: "SPARKS",
+            onSelect: function() {
+                network = bitcoin.networks.sparks;
+                DOM.bip44coin.val(5);
+            },
+        },
+        {
+            name: "DASH",
+            onSelect: function() {
+                network = bitcoin.networks.dash;
+                DOM.bip44coin.val(5);
+            },
+        },
         {
             name: "Bitcoin",
             onSelect: function() {
@@ -1047,90 +1062,8 @@
                 DOM.bip44coin.val(1);
             },
         },
-        {
-            name: "Litecoin",
-            onSelect: function() {
-                network = bitcoin.networks.litecoin;
-                DOM.bip44coin.val(2);
-            },
-        },
-        {
-            name: "Dogecoin",
-            onSelect: function() {
-                network = bitcoin.networks.dogecoin;
-                DOM.bip44coin.val(3);
-            },
-        },
-        {
-            name: "ShadowCash",
-            onSelect: function() {
-                network = bitcoin.networks.shadow;
-                DOM.bip44coin.val(35);
-            },
-        },
-        {
-            name: "ShadowCash Testnet",
-            onSelect: function() {
-                network = bitcoin.networks.shadowtn;
-                DOM.bip44coin.val(1);
-            },
-        },
-        {
-            name: "Viacoin",
-            onSelect: function() {
-                network = bitcoin.networks.viacoin;
-                DOM.bip44coin.val(14);
-            },
-        },
-        {
-            name: "Viacoin Testnet",
-            onSelect: function() {
-                network = bitcoin.networks.viacointestnet;
-                DOM.bip44coin.val(1);
-            },
-        },
-        {
-            name: "Jumbucks",
-            onSelect: function() {
-                network = bitcoin.networks.jumbucks;
-                DOM.bip44coin.val(26);
-            },
-        },
-        {
-            name: "CLAM",
-            onSelect: function() {
-                network = bitcoin.networks.clam;
-                DOM.bip44coin.val(23);
-            },
-        },
-        {
-            name: "DASH",
-            onSelect: function() {
-                network = bitcoin.networks.dash;
-                DOM.bip44coin.val(5);
-            },
-        },
-        {
-            name: "SPARKS",
-            onSelect: function() {
-                network = bitcoin.networks.sparks;
-                DOM.bip44coin.val(5);
-            },
-        },
-        {
-            name: "Namecoin",
-            onSelect: function() {
-                network = bitcoin.networks.namecoin;
-                DOM.bip44coin.val(7);
-            },
-        },
-        {
-            name: "Peercoin",
-            onSelect: function() {
-                network = bitcoin.networks.peercoin;
-                DOM.bip44coin.val(6);
-            },
-        },
+
+       
     ]
 
     init();
